@@ -1,65 +1,799 @@
-<!DOCTYPE html><html lang="ar">
+<html>
+
+
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Invest - الصفحة الرئيسية</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #1e1e2f;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background: #292947;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #1e1e2f;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+
+<title> Home page </title>
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="el-banker website">
+
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <meta name="author" content="mahmoud mustafa - mohamed madeh">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=' rel='stylesheet'>
+
+    <link rel="icon" type="images/x-icon" href="media/logo2.png" />
+
+
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+
+
+
+
 </head>
-<body>
-  <header>
-    <h1>Smart Invest</h1>
-    <p>منصة استثمار ذكية وآمنة</p>
-  </header>  <nav>
-    <a href="#">الرئيسية</a>
-    <a href="#login">تسجيل الدخول</a>
-    <a href="#register">إنشاء حساب</a>
-    <a href="#dashboard">لوحة التحكم</a>
-  </nav>  <div class="container">
-    <h2>مرحباً بك في منصة Smart Invest</h2>
-    <p>ابدأ استثمارك الذكي الآن من خلال إنشاء حساب أو تسجيل الدخول.</p>
-  </div>  <footer>
-    جميع الحقوق محفوظة &copy; 2025 Smart Invest
-  </footer>
-</body>
-</html>
+
+
+
+<body style=" font-family: 'Cairo'">
+
+
+
+    <header>
+
+
+
+        <nav id="navbar">
+
+            <div id="sidenav" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <a href="Default.html" > الرئيسيه </a>
+
+                <a href="trading_course.html">كورس التدول </a>
+
+                <a href="Trading.html">التداول </a>
+
+                <a href="consult.html">استشاره </a>
+
+                <a href="news.html"> اخبار </a>
+
+                <a href="vip_channel.html"> Vip channel </a>
+
+                <a href="contact.html"> Contact US </a>
+
+            </div>
+
+            <img class="nav-bar-logo" style="cursor:pointer" src="media/logo.jpg" alt="logo" width="7%"></span>
+
+            <span onclick="openNav()"> 
+
+            <img class="nav-bar-menu" style="cursor:pointer" src="media/nav-bar.png" alt="nav bar menu"  width="40px"></span>
+
+            
+
+
+
+        
+
+
+
+            <script>
+
+                /* Open the sidenav */
+
+                function openNav() {
+
+                    document.getElementById("sidenav").style.width = "100%";
+
+                }
+
+
+
+                /* Close/hide the sidenav */
+
+                function closeNav() {
+
+                    document.getElementById("sidenav").style.width = "0";
+
+                }
+
+            </script>
+
+            <script>
+
+                var prevScrollpos = window.pageYOffset;
+
+                window.onscroll = function() {
+
+                    var currentScrollPos = window.pageYOffset;
+
+                    if (prevScrollpos > currentScrollPos) {
+
+                        document.getElementById("navbar").style.top = "0";
+
+                    } else {
+
+                        document.getElementById("navbar").style.top = "-200px";
+
+                    }
+
+                    prevScrollpos = currentScrollPos;
+
+                }
+
+            </script>
+
+
+
+
+
+        </nav>
+
+        <section id="main" class="main">
+
+            <div class="container">
+
+                
+
+                <a>
+
+                  <img class="frames" src="media/0Iv3cI0paD4WAc7_xFPoAylUQopCxilu6mOwemu2gTg=_plaintext_638364357708481993.jpg" width="100%" height="100%">
+
+                  
+
+                </a>
+
+                <a>
+
+                  <img class="frames"  src="media/j-RzCeaqgfSmOZ2yCWN5GDZ7JiprbBSwyK6k43VKCNI=_plaintext_638364357709522942.jpg" width="100%" height="100%">
+
+                  
+
+                </a>
+
+                <a>
+
+                  <img class="frames"  src="media/JVmc3o5XvZgrBFspGimPkC0BNqUS4Kb2BY3n3j3VcWU=_plaintext_638364357711505619.jpg" width="100%" height="100%">
+
+                </a>
+
+                <a>
+
+                  <img class="frames"  src="media/KKbetylz2cETR8d-Le9r-yEjuhz0Ih-WdNdFqHdOyJY=_plaintext_638364357711550725.jpg" width="100%" height="100%">
+
+                </a>
+
+                <a>
+
+                  <img class="frames"  src="media/WIvwVa8KobtPIf8kWIrFw6UOISJ6DZD4zzRP7V6QlLw=_plaintext_638364357711600832.jpg" width="100%" height="100%">
+
+                </a>
+
+
+
+              
+
+
+
+                <a class="prev" id ="leftArrow" onclick="plusSlides(-1)">❮</a>
+
+                <a class="next" id ="rightArrow" onclick="plusSlides(1)">❯</a>
+
+
+
+                <a id="frames" href="#contact" class="main-btn">CONTACTS</a>
+
+                <div class="circles">
+
+                  <span class="circle dot" onclick="currentDiv(1)"></span>
+
+                  <span class="circle" onclick="currentDiv(2)"></span>
+
+                  <span class="circle" onclick="currentDiv(3)"></span>
+
+                  <span class="circle" onclick="currentDiv(4)"></span>
+
+                  <span class="circle" onclick="currentDiv(5)"></span>
+
+                </div>
+
+              
+
+              </div>
+
+              
+
+              
+
+              <script>
+
+              
+
+                // IMAGE SLIDES & CIRCLES ARRAYS, & COUNTER
+
+                var imageSlides = document.getElementsByClassName('frames');
+
+                var circles = document.getElementsByClassName('circle');
+
+                var leftArrow = document.getElementById('leftArrow');
+
+                var rightArrow = document.getElementById('rightArrow');
+
+                var counter = 0;
+
+              
+
+                // HIDE ALL IMAGES FUNCTION
+
+                function hideImages() {
+
+                  for (var i = 0; i < imageSlides.length; i++) {
+
+                    imageSlides[i].classList.remove('visible');
+
+                  }
+
+                }
+
+              
+
+                // REMOVE ALL DOTS FUNCTION
+
+                function removeDots() {
+
+                  for (var i = 0; i < imageSlides.length; i++) {
+
+                    circles[i].classList.remove('dot');
+
+                  }
+
+                }
+
+              
+
+                function currentDiv(n) {
+
+                showDivs(slideIndex = n);
+
+                }
+
+              
+
+                // SINGLE IMAGE LOOP/CIRCLES FUNCTION
+
+                function imageLoop() {
+
+                  var currentImage = imageSlides[counter];
+
+                  var currentDot = circles[counter];
+
+                  currentImage.classList.add('visible');
+
+                  removeDots();
+
+                  currentDot.classList.add('dot');
+
+                  counter++;
+
+                }
+
+              
+
+                // LEFT & RIGHT ARROW FUNCTION & CLICK EVENT LISTENERS
+
+                function arrowClick(e) {
+
+                  var target = e.target;
+
+                  if (target == leftArrow) {
+
+                    clearInterval(imageSlideshowInterval);
+
+                    hideImages();
+
+                    removeDots();
+
+                    if (counter == 1) {
+
+                      counter = (imageSlides.length - 1);
+
+                      imageLoop();
+
+                      imageSlideshowInterval = setInterval(slideshow, 4000);
+
+                    } else {
+
+                      counter--;
+
+                      counter--;
+
+                      imageLoop();
+
+                      imageSlideshowInterval = setInterval(slideshow, 4000);
+
+                    }
+
+                  } 
+
+                  else if (target == rightArrow) {
+
+                    clearInterval(imageSlideshowInterval);
+
+                    hideImages();
+
+                    removeDots();
+
+                    if (counter == imageSlides.length) {
+
+                      counter = 0;
+
+                      imageLoop();
+
+                      imageSlideshowInterval = setInterval(slideshow, 4000);
+
+                    } else {
+
+                      imageLoop();
+
+                      imageSlideshowInterval = setInterval(slideshow, 4000);
+
+                    }
+
+                  }
+
+                }
+
+              
+
+                leftArrow.addEventListener('click', arrowClick);
+
+                rightArrow.addEventListener('click', arrowClick);
+
+                
+
+                // IMAGE SLIDE FUNCTION
+
+                function slideshow() {
+
+                  if (counter < imageSlides.length) {
+
+                    imageLoop();
+
+                  } else {
+
+                    counter = 0;
+
+                    hideImages();
+
+                    imageLoop();
+
+                  }
+
+                }
+
+              
+
+                // SHOW FIRST IMAGE, & THEN SET & CALL SLIDE INTERVAL
+
+                setTimeout(slideshow, 0);
+
+                var imageSlideshowInterval = setInterval(slideshow, 4000);
+
+              
+
+              </script>          
+
+        </section>
+
+
+
+        <Section class="about" id="about">
+
+          <div class="main-about-1"><img class="about-img" src="home/personal_photo.jpg"  type="png" alt="Personal photo for Abdelrahman Mohsen"></div>
+
+          <div class="main-about">
+
+              <h1 class="about-title" style="font-family:Poiret one;">عن البنكيير</h1>
+
+              <h2>عبدالرحمن محسن</h2>
+
+              <ul class="info-text">
+
+                  <p>مستشارك المالى فى عالم التداول والاستثمار ، أقدم لك أسرار ونصائح يومية ‎تحفيزريادة الأعمال الاستثمار أساعدك على تطوير ذاتك </p>
+
+                  <p>كنت حد تايه فى حياته لغايط ما جت سنه 2020 واصبحت بفكر فكر استثمارى اكتر كنت بجيب الحاجات الى تجيبلى فلوس واما الحاجات التانيه نو. بدأت مع 5 منصات تداول بالاول مستمر حاليا مع اتنين دى مش نصيحه انك تدخلهم ولكن تجربتى معاهم جيده جدا</p>
+
+                  <p>بحقق ارباح شهريه 20% 30% من رأس مالى</p>
+
+                  <p>و حابب تعمل زى احنا فتحنا استشارات</p>
+
+                  <p>هتبقا حاجة كويسه ان اتعرف عليك</p>
+
+              </ul>
+
+              <div class="About-media">
+
+                  <a href="" target="_blank"><img id="fixedbutton1" src="logos/whatsapp.png" alt="insta logo" type="png" width="8%"></a>
+
+                  <a href="" target="_blank"><img id="fixedbutton1" src="logos/facebook.png" alt="facebook-logo" type="png" width="8%"></a>
+
+                  <a href="" target="_blank"><img id="fixedbutton1" src="logos/instagram.png" alt="insta logo" type="png" width="8%"></a>
+
+              </div>
+
+          </div>
+
+      </Section>
+
+    <section class="card-slider-sec">
+
+      <h1 class="about-title-1" style="font-family:Poiret one;"> خدمات الوزير المالي</h1>
+
+        <div class="slide-container swiper">
+
+            <div class="slide-content">
+
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile5.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile6.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile7.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile8.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+
+                                <!--<img src="images/profile9.jpg" alt="" class="card-img">-->
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card-content">
+
+                            <h2 class="name">David Dell</h2>
+
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+
+
+                            <button class="button">View More</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+
+            <div class="swiper-button-prev swiper-navBtn"></div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        
+
+    </section>
+
+    <section class="Youtube-display" id="Youtube">
+
+      <h2 class="title-1">EL Bankeer</h2>
+
+      <div class="content">
+
+          <div class="project-card">
+
+              <div class="project-video">
+
+                  <iframe width="320px" height="180px" src="https://www.youtube.com/embed/XPGn37v3QF0?si=jeQ4INyA74d5nReH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              </div>
+
+          </div>
+
+          <div class="project-card">
+
+              <div class="project-video">
+
+                <iframe width="320px" height="180px" src="https://www.youtube.com/embed/XPGn37v3QF0?si=jeQ4INyA74d5nReH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              </div>
+
+          </div>
+
+          <div class="project-card">
+
+              <div class="project-video">
+
+                <iframe width="320px" height="180px" src="https://www.youtube.com/embed/XPGn37v3QF0?si=jeQ4INyA74d5nReH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              </div>
+
+          </div>
+
+          <div class="project-card">
+
+              <div class="project-video">
+
+                <iframe width="320px" height="180px" src="https://www.youtube.com/embed/XPGn37v3QF0?si=jeQ4INyA74d5nReH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; e
