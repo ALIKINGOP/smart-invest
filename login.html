@@ -1,25 +1,65 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="ar">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>تسجيل دخول - استثمار ذكي</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Invest - الصفحة الرئيسية</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1e1e2f;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #292947;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>تسجيل دخول</h1>
-    </header>
-    <main>
-        <form id="loginForm">
-            <label>اسم المستخدم:</label>
-            <input type="text" id="username" required />
-            <label>كلمة المرور:</label>
-            <input type="password" id="password" required />
-            <button type="submit">دخول</button>
-        </form>
-        <p>ليس لديك حساب؟ <a href="register.html">إنشاء حساب</a></p>
-    </main>
-    <script src="auth.js"></script>
+  <header>
+    <h1>Smart Invest</h1>
+    <p>منصة استثمار ذكية وآمنة</p>
+  </header>  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#login">تسجيل الدخول</a>
+    <a href="#register">إنشاء حساب</a>
+    <a href="#dashboard">لوحة التحكم</a>
+  </nav>  <div class="container">
+    <h2>مرحباً بك في منصة Smart Invest</h2>
+    <p>ابدأ استثمارك الذكي الآن من خلال إنشاء حساب أو تسجيل الدخول.</p>
+  </div>  <footer>
+    جميع الحقوق محفوظة &copy; 2025 Smart Invest
+  </footer>
 </body>
 </html>
